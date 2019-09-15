@@ -1,0 +1,13 @@
+<h1>Show Mail</h1>
+
+<ul>
+
+  <li>
+    <strong>Address:</strong>
+    <%= @mail.address %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.mail_path(@conn, :edit, @mail) %></span>
+<span><%= link "Back", to: Routes.mail_path(@conn, :index) %></span>
